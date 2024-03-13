@@ -1,0 +1,14 @@
+#To build the image with tag
+docker build -t sayanava194/dockerflaskapp:v1.0 .
+
+#To run the image in a container
+docker container run -d -p 3000:3000 sayanava194/dockerflaskapp:v1.0
+
+#To list running containers
+docker container ls
+
+#To stop container
+docker container stop <CONTAINER ID>
+
+#To push container to docker hub
+docker push sayanava194/dockerflaskapp:v1.0
